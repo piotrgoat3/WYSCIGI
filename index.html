@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Torów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- Ekran startowy -->
+        <div id="setup-screen">
+            <h1>Witaj w Lidze Torów!</h1>
+            <p>Zostań menedżerem drużyny wyścigowej i poprowadź ją do zwycięstwa.</p>
+            <input type="text" id="team-name-input" placeholder="Wpisz nazwę swojej drużyny">
+            <button id="start-game-btn">Rozpocznij Grę</button>
+        </div>
+
+        <!-- Główny ekran gry (początkowo ukryty) -->
+        <div id="main-screen" class="hidden">
+            <header id="game-header">
+                <h1 id="player-team-name">Nazwa Drużyny</h1>
+                <div id="game-stats">Dzień: 1 | Reputacja: 50</div>
+            </header>
+            
+            <nav id="main-menu">
+                <button id="show-club-btn" class="menu-btn active">Mój Klub</button>
+                <button id="show-market-btn" class="menu-btn">Wolni Zawodnicy</button>
+                <button id="show-league-btn" class="menu-btn">Tabela Ligi</button>
+                <button id="show-race-btn" class="menu-btn race-btn">Rozegraj Wyścig</button>
+            </nav>
+
+            <main id="game-content">
+                <!-- Treść będzie dynamicznie generowana przez JavaScript -->
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
